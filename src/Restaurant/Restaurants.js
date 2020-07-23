@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReviewForm from '../Review/ReviewForm';
 import Restaurant from './Restaurant';
 
-const BURGER_URL = `http://localhost:3001/api/v1/restaurants`;
+const BURGER_URL = `http://localhost:3000/api/v1/restaurants`;
 // const REVIEW_URL = `http://localhost:3001/api/v1/reviews`;
 
 class Restaurants extends Component {
@@ -30,17 +30,6 @@ console.log(res_data);
             })
         })
     }
-
-//     getReviews() {
-//         fetch(REVIEW_URL)
-//         .then(response => response.json())
-//         .then(res_data => {
-// console.log(res_data);
-//             this.setState({
-//                 reviews: res_data
-//             })
-//         })
-//     }
     
     render() {
 console.log(this.state);
