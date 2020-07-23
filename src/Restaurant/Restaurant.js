@@ -1,14 +1,35 @@
 import React from 'react';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 const Restaurant = (props) => {
     return(
         <div className="card">
+            <Card>
+            <CardActionArea>
+            <CardContent>
+                <Typography className="restaurant-name" gutterBottom variant="h5" component="h2">
+                    {props.name}
+                </Typography>
+            </CardContent>
             <div className="restaurant-logo">
-                <img src={props.img} alt={props.name} />
+                <CardMedia component="img" image={props.img} alt={props.name} title={props.name} height="250"/>
             </div>
-            <div className="restaurant-name">
-                {props.name}
-            </div>
+            </CardActionArea>
+            {/* <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions> */}
+            </Card>
         </div>
     )
 }
