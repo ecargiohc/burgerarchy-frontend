@@ -3,7 +3,6 @@ import ReviewForm from '../Review/ReviewForm';
 import Restaurant from './Restaurant';
 
 const BURGER_URL = `http://localhost:3000/api/v1/restaurants`;
-// const REVIEW_URL = `http://localhost:3001/api/v1/reviews`;
 
 class Restaurants extends Component {
     constructor(props) {
