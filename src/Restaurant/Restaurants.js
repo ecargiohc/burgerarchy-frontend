@@ -17,7 +17,6 @@ class Restaurants extends Component {
 
     componentDidMount() {
         this.getRestaurants();
-        // this.getReviews();
     }
     
     getRestaurants() {
