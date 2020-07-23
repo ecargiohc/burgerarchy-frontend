@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReviewForm from '../Review/ReviewForm';
 import Restaurant from './Restaurant';
 
 const BURGER_URL = `http://localhost:3000/api/v1/restaurants`;
@@ -37,7 +36,6 @@ console.log(this.state.data);
                 <ul id="restaurant-list">
                     {this.state.restaurants.map((d) => (
                         <Restaurant key={d.id} name={d.name} img={d.image_url}/>
-
                     ))}
                 </ul>
             </div>
