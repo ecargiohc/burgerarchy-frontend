@@ -36,11 +36,10 @@ console.log(this.state);
 console.log(this.state.data);
         return(
             <div>
-                {/* <ReviewForm /> */}
                 <ul id="restaurant-list">
                     {this.state.restaurants.map((d) => (
                         <Restaurant key={d.id} name={d.name} img={d.image_url}/>
-                        // <li key={d.id}>{d.id}: {d.name}</li>
+
                     ))}
                 </ul>
             </div>
