@@ -1,4 +1,5 @@
 import React from 'react';
+import Reviews from '../Review/Reviews';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -11,24 +12,24 @@ const Restaurant = (props) => {
     return(
         <div className="card">
             <Card>
-            <CardActionArea>
-            <CardContent>
-                <Typography className="restaurant-name" gutterBottom variant="h5" component="h2">
-                    {props.name}
-                </Typography>
-            </CardContent>
-            <div className="restaurant-logo">
-                <CardMedia component="img" image={props.img} alt={props.name} title={props.name} height="250"/>
-            </div>
-            </CardActionArea>
-            {/* <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions> */}
+                <CardActionArea>
+                <CardContent>
+                    <Typography className="restaurant-name" gutterBottom variant="h5" component="h2">
+                        {props.name}
+                    </Typography>
+                </CardContent>
+                <div className="restaurant-logo">
+                    <CardMedia component="img" image={props.img} alt={props.name} title={props.name} height="250"/>
+                </div>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                    Rating
+                    </Button>
+                    <Button size="small" color="primary">
+                    <Reviews />
+                    </Button>
+                </CardActions>
             </Card>
         </div>
     )

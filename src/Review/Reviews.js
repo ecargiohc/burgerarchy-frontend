@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Review from './Review';
 
 
 const REVIEW_URL = `http://localhost:3001/api/v1/reviews`
@@ -27,16 +28,17 @@ console.log(res_data);
         return(
             <div>
                 <ul id="reviews-list">
-                    {this.state.reviews.map((r) => {
+                    {/* {this.state.reviews.map((r) => {
                         <Review 
                         key={r.id} 
                         title={r.title}
                         description={r.description}
                         score={r.score}
                         restaurant={r.restaurant}/>
-                    })}
+                    })} */}
                 </ul>
             </div>
         )
     }
 }
+export default Reviews;
