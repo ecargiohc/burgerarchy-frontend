@@ -7,8 +7,7 @@ class ReviewForm extends Component {
         this.state = {
             title: "", 
             description: "",
-            score: 0,
-            restaurant_id: 0
+            score: 0
         }
     }
 
