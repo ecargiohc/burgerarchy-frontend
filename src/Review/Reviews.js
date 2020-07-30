@@ -32,9 +32,6 @@ console.log(res_data);
                         <Review 
                         key={r.id} 
                         title={r.title}
-                        description={r.description}
-                        
-                        restaurant={r.restaurant}/>
                     })} */}
                 </ul>
             </div>
