@@ -28,11 +28,6 @@ console.log(res_data);
         return(
             <div>
                 <ul id="reviews-list">
-                    {/* {this.state.reviews.map((r) => {
-                        <Review 
-                        key={r.id} 
-                        title={r.title}
-                    })} */}
                 </ul>
             </div>
         )
