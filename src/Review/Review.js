@@ -1,6 +1,5 @@
 
 import React from 'react';
-// import Reviews from './Reviews';
 
 export default function Review(props) {
     return(
