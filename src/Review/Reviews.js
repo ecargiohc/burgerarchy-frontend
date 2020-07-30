@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Review from './Review';
 
 
 const REVIEW_URL = `http://localhost:3001/api/v1/reviews`
