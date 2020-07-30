@@ -1,5 +1,5 @@
 import React from 'react';
-import Reviews from '../Review/Reviews';
+import Reviews from '../Review/Reviews.js';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -27,7 +27,7 @@ const Restaurant = (props) => {
                     Rating
                     </Button>
                     <Button size="small" color="primary">
-                    <Reviews />
+                        <Reviews />
                     </Button>
                 </CardActions>
             </Card>

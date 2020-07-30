@@ -33,7 +33,7 @@ console.log(res_data);
                         key={r.id} 
                         title={r.title}
                         description={r.description}
-                        score={r.score}
+                        
                         restaurant={r.restaurant}/>
                     })} */}
                 </ul>
