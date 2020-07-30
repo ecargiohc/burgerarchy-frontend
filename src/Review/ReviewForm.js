@@ -8,6 +8,7 @@ class ReviewForm extends Component {
             title: "", 
             description: "",
             score: 0
+            // restaurant id?
         }
     }
 
